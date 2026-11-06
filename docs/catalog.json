@@ -1,0 +1,825 @@
+{
+ "pieces": [
+  {
+   "slug": "desert-rose",
+   "name": "Desert Rose",
+   "cat": "Chandelier",
+   "mat": "Glass, gilded metal",
+   "price": "From EGP 148,000",
+   "label": "new",
+   "maker": "",
+   "collection": "Glass",
+   "blurb": "",
+   "img": "assets/161d7544adaf3555a5c7c3f9e8e49911.webp",
+   "imgs": [
+    "assets/161d7544adaf3555a5c7c3f9e8e49911.webp"
+   ],
+   "href": "piece.html?p=desert-rose",
+   "sizes": [
+    {
+     "label": "90 cm",
+     "detail": "90 × 70 cm drop · 9 lights",
+     "price": "EGP 148,000"
+    },
+    {
+     "label": "120 cm",
+     "detail": "120 × 90 cm drop · 14 lights",
+     "price": "EGP 196,000"
+    },
+    {
+     "label": "150 cm",
+     "detail": "150 × 110 cm drop · 21 lights",
+     "price": "Price on request"
+    }
+   ],
+   "finishes": [
+    {
+     "name": "Gilded brass",
+     "hex": "#B9975B"
+    },
+    {
+     "name": "Antique bronze",
+     "hex": "#6E5641"
+    },
+    {
+     "name": "Polished nickel",
+     "hex": "#C3C7C9"
+    }
+   ],
+   "specs": [
+    {
+     "k": "Diameter",
+     "v": "90 / 120 / 150 cm"
+    },
+    {
+     "k": "Drop",
+     "v": "70 cm – 2 m, set on site"
+    },
+    {
+     "k": "Material",
+     "v": "Hand-blown glass, gilded metal"
+    },
+    {
+     "k": "Light",
+     "v": "G9 LED, 2700 K, dimmable"
+    },
+    {
+     "k": "Lead time",
+     "v": "3–5 days in Cairo"
+    }
+   ]
+  },
+  {
+   "slug": "branch",
+   "name": "Branch",
+   "cat": "Chandelier",
+   "mat": "Crystal, brass",
+   "price": "EGP 185,000",
+   "label": "show",
+   "maker": "",
+   "collection": "Classic",
+   "blurb": "",
+   "img": "assets/2b227a72a7ec6e00573e0648a656e3c6.webp",
+   "imgs": [
+    "assets/2b227a72a7ec6e00573e0648a656e3c6.webp"
+   ],
+   "href": "piece.html?p=branch",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "spiral",
+   "name": "Spiral",
+   "cat": "Chandelier",
+   "mat": "Crystal, chrome",
+   "price": "From EGP 96,000",
+   "label": "new",
+   "maker": "",
+   "collection": "Modern",
+   "blurb": "",
+   "img": "assets/7345e2e78b6c7c5b1e20e24486b006a8.webp",
+   "imgs": [
+    "assets/7345e2e78b6c7c5b1e20e24486b006a8.webp"
+   ],
+   "href": "piece.html?p=spiral",
+   "sizes": [
+    {
+     "label": "80 cm",
+     "detail": "80 × 120 cm high · 12 lights",
+     "price": "EGP 96,000"
+    },
+    {
+     "label": "100 cm",
+     "detail": "100 × 160 cm high · 18 lights",
+     "price": "EGP 138,000"
+    },
+    {
+     "label": "130 cm",
+     "detail": "130 × 220 cm high · 26 lights",
+     "price": "Price on request"
+    }
+   ],
+   "finishes": [
+    {
+     "name": "Polished chrome",
+     "hex": "#C3C7C9"
+    },
+    {
+     "name": "Gold",
+     "hex": "#B9975B"
+    },
+    {
+     "name": "Black chrome",
+     "hex": "#2E2E30"
+    }
+   ],
+   "specs": [
+    {
+     "k": "Dimensions",
+     "v": "80 / 100 / 130 cm across"
+    },
+    {
+     "k": "Drop",
+     "v": "Set on site to your ceiling"
+    },
+    {
+     "k": "Material",
+     "v": "Cut crystal, polished chrome"
+    },
+    {
+     "k": "Light",
+     "v": "G9 LED, 2700 K, dimmable"
+    },
+    {
+     "k": "Lead time",
+     "v": "In stock: 3–5 days. Made to order: 6–8 weeks."
+    }
+   ]
+  },
+  {
+   "slug": "waterfall-column",
+   "name": "Waterfall Column",
+   "cat": "Chandelier",
+   "mat": "Crystal",
+   "price": "On request",
+   "label": "order",
+   "maker": "",
+   "collection": "Classic",
+   "blurb": "",
+   "img": "assets/e0e13a2b151fdf653414b2777e8ae5de.webp",
+   "imgs": [
+    "assets/e0e13a2b151fdf653414b2777e8ae5de.webp"
+   ],
+   "href": "piece.html?p=waterfall-column",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "zenith",
+   "name": "Zénith",
+   "cat": "Chandelier",
+   "mat": "Crystal, fabric shades",
+   "price": "On request",
+   "label": "",
+   "maker": "Baccarat",
+   "collection": "Classic",
+   "blurb": "Cut crystal under small pleated shades, on a tiered frame. The classic dining-room piece.",
+   "img": "assets/e86c5a332bea5952d4fd8c263e97df71.webp",
+   "imgs": [
+    "assets/e86c5a332bea5952d4fd8c263e97df71.webp",
+    "assets/77eabd16c29c9512849e1419f121344b.webp"
+   ],
+   "href": "piece.html?p=zenith",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "willow",
+   "name": "Willow",
+   "cat": "Chandelier",
+   "mat": "Crystal, polished chrome",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "Modern",
+   "blurb": "Long crystal strands hung from a branching frame, so the light falls in a column rather than a disc.",
+   "img": "assets/0e549912963bb9948ef8c3b9d96ae03d.webp",
+   "imgs": [
+    "assets/0e549912963bb9948ef8c3b9d96ae03d.webp",
+    "assets/c0d51bbd015f5cdfc3447acfac2b7282.webp"
+   ],
+   "href": "piece.html?p=willow",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "sakura",
+   "name": "Sakura",
+   "cat": "Chandelier",
+   "mat": "Glass, gilded metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "Modern",
+   "blurb": "Built for a stairwell. Glass blossom spills the full drop and is seen from every floor.",
+   "img": "assets/b825c94237f11a2c1e1bc546a8278209.webp",
+   "imgs": [
+    "assets/b825c94237f11a2c1e1bc546a8278209.webp",
+    "assets/120993279c987ee8b4b32a85ed8a787d.webp"
+   ],
+   "href": "piece.html?p=sakura",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "vine",
+   "name": "Vine",
+   "cat": "Chandelier",
+   "mat": "Blown glass, gilded metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "Glass",
+   "blurb": "Glass blooms along a gilded branch. Made to a height, so it suits an odd stair or a tall hall.",
+   "img": "assets/9aec17e994ec7a11f38a1f47615d41c1.webp",
+   "imgs": [
+    "assets/9aec17e994ec7a11f38a1f47615d41c1.webp",
+    "assets/039ff754813cc57c392d3777b4a30e13.webp"
+   ],
+   "href": "piece.html?p=vine",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "orbit",
+   "name": "Orbit",
+   "cat": "Chandelier",
+   "mat": "Smoked glass, brass",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "Glass",
+   "blurb": "Amber and smoked globes in a line along a brass rod. Sits over a long table.",
+   "img": "assets/f025c2ef2a385240e5d1bf2c9e21f783.webp",
+   "imgs": [
+    "assets/f025c2ef2a385240e5d1bf2c9e21f783.webp",
+    "assets/d2ac724cb7caee409bccdd6d4ff0e91f.webp"
+   ],
+   "href": "piece.html?p=orbit",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "tilda",
+   "name": "Tilda",
+   "cat": "Chandelier",
+   "mat": "Blackened wood, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "Modern",
+   "blurb": "Dark rods on an open cage. Heavy in daylight, and then quiet once it is lit.",
+   "img": "assets/d0885b421feec38eb6e793b56d844fbe.webp",
+   "imgs": [
+    "assets/d0885b421feec38eb6e793b56d844fbe.webp",
+    "assets/5a9cb367e2c40499a1edc2a7f2bba47f.webp"
+   ],
+   "href": "piece.html?p=tilda",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "prism",
+   "name": "Prism",
+   "cat": "Pendant",
+   "mat": "Coloured crystal",
+   "price": "EGP 42,000",
+   "label": "show",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/1299a019108e423f42d9e288007b2902.webp",
+   "imgs": [
+    "assets/1299a019108e423f42d9e288007b2902.webp"
+   ],
+   "href": "piece.html?p=prism",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "evette",
+   "name": "Evette",
+   "cat": "Pendant",
+   "mat": "Smoked glass, brass",
+   "price": "EGP 16,800",
+   "label": "order",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/e4f3b8eaede5a2e6843042b1c167b238.webp",
+   "imgs": [
+    "assets/e4f3b8eaede5a2e6843042b1c167b238.webp"
+   ],
+   "href": "piece.html?p=evette",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "mirza",
+   "name": "Mirza",
+   "cat": "Pendant",
+   "mat": "Glass, wood",
+   "price": "On request",
+   "label": "last",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/44ac0b63d1808f04ef20f3b6501ed9cb.webp",
+   "imgs": [
+    "assets/44ac0b63d1808f04ef20f3b6501ed9cb.webp"
+   ],
+   "href": "piece.html?p=mirza",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "lantern",
+   "name": "Lantern",
+   "cat": "Pendant",
+   "mat": "Metal, opal glass",
+   "price": "EGP 11,200",
+   "label": "order",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/0bec61b82d9d845c0ccecc4bb3849c14.webp",
+   "imgs": [
+    "assets/0bec61b82d9d845c0ccecc4bb3849c14.webp"
+   ],
+   "href": "piece.html?p=lantern",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "array",
+   "name": "Array",
+   "cat": "Pendant",
+   "mat": "Textile shade, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "Vibia",
+   "collection": "",
+   "blurb": "A soft drum with a rippled inner face, so the light reads as texture rather than a point.",
+   "img": "assets/1757636fc1dd1aa2bbfeac6a470c396b.webp",
+   "imgs": [
+    "assets/1757636fc1dd1aa2bbfeac6a470c396b.webp",
+    "assets/f3e72a06a5bad50311acbe4d68e318e7.webp"
+   ],
+   "href": "piece.html?p=array",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "pebbles-pendant",
+   "name": "Pebbles Pendant",
+   "cat": "Pendant",
+   "mat": "Coloured glass, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "Stacked glass pebbles on a slim drop. Hangs singly or in a row over an island.",
+   "img": "assets/f6ed96e4ccbcde7c47975f193cbb1a85.webp",
+   "imgs": [
+    "assets/f6ed96e4ccbcde7c47975f193cbb1a85.webp",
+    "assets/887606999e7fcb1579842b918d1b9793.webp"
+   ],
+   "href": "piece.html?p=pebbles-pendant",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "stacked-alabaster",
+   "name": "Stacked Alabaster",
+   "cat": "Wall light",
+   "mat": "Alabaster, brass",
+   "price": "EGP 19,500",
+   "label": "new",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/55c3eedc41c176a95378549bb8019d7a.webp",
+   "imgs": [
+    "assets/55c3eedc41c176a95378549bb8019d7a.webp"
+   ],
+   "href": "piece.html?p=stacked-alabaster",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "oval",
+   "name": "Oval",
+   "cat": "Wall light",
+   "mat": "Alabaster",
+   "price": "EGP 21,000",
+   "label": "show",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/8e643a083cf4c824cb2175f503297165.webp",
+   "imgs": [
+    "assets/8e643a083cf4c824cb2175f503297165.webp"
+   ],
+   "href": "piece.html?p=oval",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "petal",
+   "name": "Petal",
+   "cat": "Wall light",
+   "mat": "Alabaster",
+   "price": "EGP 14,500",
+   "label": "order",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/286ad7222d1efd08d86ab4639a7570b2.webp",
+   "imgs": [
+    "assets/286ad7222d1efd08d86ab4639a7570b2.webp"
+   ],
+   "href": "piece.html?p=petal",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "necklace",
+   "name": "Necklace",
+   "cat": "Wall light",
+   "mat": "Opal glass, metal",
+   "price": "EGP 18,500",
+   "label": "new",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/9d3676a5ba456b7812cf90e35ba12233.webp",
+   "imgs": [
+    "assets/9d3676a5ba456b7812cf90e35ba12233.webp"
+   ],
+   "href": "piece.html?p=necklace",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "formosa",
+   "name": "Formosa",
+   "cat": "Wall light",
+   "mat": "Marble, bronze",
+   "price": "EGP 24,000",
+   "label": "show",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/4733f0b7d663e05d6c4eee8dcdc4c944.webp",
+   "imgs": [
+    "assets/4733f0b7d663e05d6c4eee8dcdc4c944.webp"
+   ],
+   "href": "piece.html?p=formosa",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "liquid",
+   "name": "Liquid",
+   "cat": "Wall light",
+   "mat": "Amber glass, gilded metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "Pulled glass drops on a textured gilded back plate. Reads as a piece of jewellery on the wall.",
+   "img": "assets/d2e24f8ddc6ab5de058e73bed92fa5a7.webp",
+   "imgs": [
+    "assets/d2e24f8ddc6ab5de058e73bed92fa5a7.webp",
+    "assets/711980669a0766ccabd63b1f48e5fa9d.webp"
+   ],
+   "href": "piece.html?p=liquid",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "salix",
+   "name": "Salix",
+   "cat": "Wall light",
+   "mat": "Amber crystal, gilded metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "Crystal leaves on a gilded branch. Best in a pair, either side of something.",
+   "img": "assets/ffd1fa9dc42095024122a0a3b24cde58.webp",
+   "imgs": [
+    "assets/ffd1fa9dc42095024122a0a3b24cde58.webp",
+    "assets/bd8171ab19169aba7463791f98f397a2.webp"
+   ],
+   "href": "piece.html?p=salix",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "petra",
+   "name": "Petra",
+   "cat": "Wall light",
+   "mat": "Opal glass, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "Layered glass petals that throw the light up and down the wall.",
+   "img": "assets/fb92f01a475229e28633ee61b7e74009.webp",
+   "imgs": [
+    "assets/fb92f01a475229e28633ee61b7e74009.webp"
+   ],
+   "href": "piece.html?p=petra",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "nacre",
+   "name": "Nacre",
+   "cat": "Wall light",
+   "mat": "Art glass, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "One swirled glass shell with a dark aperture. The light comes from behind the glass, not through it.",
+   "img": "assets/25d5e24dfc957800099c5fe2479568a3.webp",
+   "imgs": [
+    "assets/25d5e24dfc957800099c5fe2479568a3.webp",
+    "assets/ea256c9594c9856257907825da9c7bc7.webp"
+   ],
+   "href": "piece.html?p=nacre",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "wabi",
+   "name": "Wabi",
+   "cat": "Wall light",
+   "mat": "Textured plaster, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "A plain plaster block that washes the wall from both ends. Quiet enough for a corridor.",
+   "img": "assets/e62acf71ea965c15981dea8c94f7a89b.webp",
+   "imgs": [
+    "assets/e62acf71ea965c15981dea8c94f7a89b.webp"
+   ],
+   "href": "piece.html?p=wabi",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "mushroom",
+   "name": "Mushroom",
+   "cat": "Table lamp",
+   "mat": "Travertine, metal",
+   "price": "EGP 12,500",
+   "label": "new",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/a6cf27a4dba06b9fb7057b75b2ebd129.webp",
+   "imgs": [
+    "assets/a6cf27a4dba06b9fb7057b75b2ebd129.webp"
+   ],
+   "href": "piece.html?p=mushroom",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "tivaro",
+   "name": "Tivaro",
+   "cat": "Table lamp",
+   "mat": "Travertine",
+   "price": "EGP 26,000",
+   "label": "show",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/2518200d46ae546dc89507ffa08bab92.webp",
+   "imgs": [
+    "assets/2518200d46ae546dc89507ffa08bab92.webp"
+   ],
+   "href": "piece.html?p=tivaro",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "crystal-waterfall",
+   "name": "Crystal Waterfall",
+   "cat": "Table lamp",
+   "mat": "Crystal, chrome",
+   "price": "EGP 32,000",
+   "label": "last",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/fa04153e085896e1be23d315075e6703.webp",
+   "imgs": [
+    "assets/fa04153e085896e1be23d315075e6703.webp"
+   ],
+   "href": "piece.html?p=crystal-waterfall",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "big-battery",
+   "name": "Big Battery",
+   "cat": "Table lamp",
+   "mat": "Moulded acrylic",
+   "price": "On request",
+   "label": "",
+   "maker": "Kartell",
+   "collection": "",
+   "blurb": "Cordless, so it moves. Charges on its base and runs through an evening on the table.",
+   "img": "assets/c61a873a5e01efaa66c0faa820a51abe.webp",
+   "imgs": [
+    "assets/c61a873a5e01efaa66c0faa820a51abe.webp",
+    "assets/1341dd3835e2d00551de46f36ff7a6e8.webp"
+   ],
+   "href": "piece.html?p=big-battery",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "raindrop",
+   "name": "Raindrop",
+   "cat": "Table lamp",
+   "mat": "Crystal, polished chrome",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "A short fall of crystal on a chrome stem. The small version of a stair chandelier.",
+   "img": "assets/3385ca8a64c883afde72888eb7da05af.webp",
+   "imgs": [
+    "assets/3385ca8a64c883afde72888eb7da05af.webp",
+    "assets/157346e47e6c521c73848981fff6ab9e.webp"
+   ],
+   "href": "piece.html?p=raindrop",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "amulet",
+   "name": "Amulet",
+   "cat": "Table lamp",
+   "mat": "Smoked glass, chrome",
+   "price": "On request",
+   "label": "",
+   "maker": "Maytoni",
+   "collection": "",
+   "blurb": "Stacked smoked spheres under a matching shade. Dims down to very little.",
+   "img": "assets/a19cd901722442390f5a128843ef69f6.webp",
+   "imgs": [
+    "assets/a19cd901722442390f5a128843ef69f6.webp",
+    "assets/6e656e60849bd737723447db2bbca023.webp"
+   ],
+   "href": "piece.html?p=amulet",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "halo",
+   "name": "Halo",
+   "cat": "Table lamp",
+   "mat": "Smoked glass, brass",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "A smoked glass drum with the lamp held inside it. Glows rather than lights.",
+   "img": "assets/f063ebfec7f45e2908656900dcc741c6.webp",
+   "imgs": [
+    "assets/f063ebfec7f45e2908656900dcc741c6.webp",
+    "assets/934dec36f57e6012fb69fa5adcd66132.webp"
+   ],
+   "href": "piece.html?p=halo",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "totem",
+   "name": "Totem",
+   "cat": "Floor lamp",
+   "mat": "Alabaster",
+   "price": "EGP 58,000",
+   "label": "show",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/95cddb35463c74a8410fdbba63c231b1.webp",
+   "imgs": [
+    "assets/95cddb35463c74a8410fdbba63c231b1.webp"
+   ],
+   "href": "piece.html?p=totem",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "pebbles-floor",
+   "name": "Pebbles Floor",
+   "cat": "Floor lamp",
+   "mat": "Coloured glass, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "The Pebbles family on a floor stem. Colour in the glass, so it reads even unlit.",
+   "img": "assets/4b4e7737b5d024217d95950a8426fdda.webp",
+   "imgs": [
+    "assets/4b4e7737b5d024217d95950a8426fdda.webp",
+    "assets/696c4d870ef1552f44bc9493db428ab2.webp"
+   ],
+   "href": "piece.html?p=pebbles-floor",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "big-shadow",
+   "name": "Big Shadow",
+   "cat": "Floor lamp",
+   "mat": "Opal diffuser, metal",
+   "price": "On request",
+   "label": "",
+   "maker": "",
+   "collection": "",
+   "blurb": "Deliberately oversized. Stands beside a sofa and does the work of a ceiling light.",
+   "img": "assets/e5cb0e1d576f4129e1ad913a50ae5085.webp",
+   "imgs": [
+    "assets/e5cb0e1d576f4129e1ad913a50ae5085.webp",
+    "assets/b28139bd6ae757052c988d92cd8f7981.webp"
+   ],
+   "href": "piece.html?p=big-shadow",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
+   "slug": "pebble",
+   "name": "Pebble",
+   "cat": "Outdoor",
+   "mat": "Stone composite",
+   "price": "EGP 9,800",
+   "label": "new",
+   "maker": "",
+   "collection": "",
+   "blurb": "",
+   "img": "assets/7d35291b5eab7c91e36046d24f7003be.webp",
+   "imgs": [
+    "assets/7d35291b5eab7c91e36046d24f7003be.webp"
+   ],
+   "href": "piece.html?p=pebble",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  }
+ ],
+ "whatsapp": "https://wa.me/201111863064"
+}
