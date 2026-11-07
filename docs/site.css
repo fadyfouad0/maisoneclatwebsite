@@ -1242,15 +1242,8 @@ body{margin:0}
 
 :is(.d3,.mn,.sv-bar) .h3-bar .nv-row{border-top-color:rgba(244,239,231,.22)}
 
-:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover{background:#F4EFE7;color:#000}
-
-:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .wm{color:#000;filter:none}
-
-:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nv-row{border-color:rgba(0,0,0,.14)}
-
-:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover a,:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nv-u{text-shadow:none}
-
-:is(.d3,.mn,.sv-bar) .h3-bar:has(.nv:hover)::after{opacity:0}
+/* over the hero the bar stays as it is: hovering it no longer turns it beige */
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover{background:transparent;color:inherit}
 
 :is(.d3,.mn,.sv-bar) .h3-bar::after{transition:opacity .4s ease}
 
@@ -3159,3 +3152,60 @@ box-sizing:border-box;width:390px;background:var(--pa);color:#000;font-family:'I
   .ph .g2{grid-template-columns:repeat(3,minmax(0,1fr))}
   .ph .ha{height:62vh;min-height:460px}
 }
+
+/* ===================================================================
+   Deployment fixes — November 2026
+   =================================================================== */
+
+/* The tray and the phone menu sit outside .d3, so the palette and the
+   typeface never reached them: every var() inside went invalid, which is
+   why the saved list came out in a serif with no rules between the rows. */
+.sv-bar,.mn{--pa:#F4EFE7;--ln:rgba(0,0,0,.14);--bo:#51302C;--es:#33251A;--ec:#E5D9C8;--mu:rgba(0,0,0,.55);--ez:cubic-bezier(.16,.84,.24,1);font-family:'Inter Tight','Helvetica Neue',Helvetica,sans-serif;font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+
+/* the saved list: a row is thumbnail, then name over material, then price */
+.sv-bar .sv-row{color:#000;text-decoration:none}
+.sv-bar .sv-tt{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:3px}
+.sv-bar .sv-tt b{font-weight:500;font-size:14px;line-height:1.25;letter-spacing:-.01em}
+.sv-bar .sv-tt em{font-style:normal;font-size:12px;line-height:1.3;color:var(--mu)}
+.sv-bar .sv-pp{flex:none;align-self:center;font-size:12.5px;white-space:nowrap;color:var(--mu)}
+.sv-bar .sv-row:hover .sv-tt b{text-decoration:underline;text-underline-offset:3px}
+.sv-bar .sv-list{max-height:min(54vh,420px);overflow:auto}
+
+/* `:is(.d3,.mn,.sv-bar) a{color:inherit}` outranked .d3-btn, so every dark
+   call to action was drawing black text on its black panel. */
+:is(.d3,.mn,.sv-bar) a.d3-btn{color:var(--pa)}
+:is(.d3,.mn,.sv-bar) a.d3-btn.out{color:#000}
+:is(.d3,.mn,.sv-bar) a.d3-btn.out:hover{color:var(--pa)}
+:is(.d3,.mn,.sv-bar) a.d3-btn.lt{color:#000}
+:is(.d3,.mn,.sv-bar) a.d3-btn.lt:hover{color:#000}
+:is(.d3,.mn,.sv-bar) a.d3-btn.ghost{color:var(--ec)}
+:is(.d3,.mn,.sv-bar) a.d3-btn.ghost:hover{color:#000}
+:is(.d3,.mn,.sv-bar) a.d3-btn.h3-cta{color:#000}
+:is(.d3,.mn,.sv-bar) a.d3-btn.h3-cta:hover{color:var(--pa)}
+:is(.d3,.mn,.sv-bar) .c5 a.d3-btn.out{color:#33251A}
+:is(.d3,.mn,.sv-bar) .c5 a.d3-btn.out:hover{color:#F4EFE7}
+.ph a.btn{color:var(--pa)}
+.ph a.btn.lt,.ph a.btn.out{color:#000}
+
+/* the condensed bar now follows the page instead of being frozen off-screen */
+.d3-bar{transform:translateY(-110%);opacity:0;pointer-events:none}
+.d3-bar.on{transform:none;opacity:1;pointer-events:auto}
+
+/* the open filter panel: .cf-g carries a -2.8vw margin from the category
+   boards, which pulled MATERIAL and AVAILABILITY out past the gutter */
+:is(.d3,.mn,.sv-bar) .cf-p .cf-g{margin:0}
+:is(.d3,.mn,.sv-bar) .cf-p{row-gap:18px;padding:18px 0 22px}
+:is(.d3,.mn,.sv-bar) .cf-p .cf-k{padding-top:8px}
+
+/* the phone bar: three equal tracks, so the logo sits on the centre line
+   whatever sits either side of it */
+.ph .bar{grid-template-columns:1fr auto 1fr}
+.ph .bar>.ic:first-child{justify-self:start}
+.ph .bar .wm{justify-self:center}
+.ph .bar .acts{justify-self:end}
+
+/* `:is(...) button{font:inherit;color:inherit}` outranks the tray's own rules,
+   so the two buttons in the tray were coming out at body size in black */
+.sv-bar button.sv-tog{font-size:14px}
+.sv-bar button.sv-clear{font-size:12.5px;color:var(--mu)}
+.sv-bar button.sv-clear:hover{color:#000}

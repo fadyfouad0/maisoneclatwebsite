@@ -35,13 +35,26 @@
     if (i > -1) saved.splice(i, 1); else saved.push(slug);
     persist(); paintSaved();
   }
+  function slugInHref(href) {
+    if (!href) return '';
+    var m = href.match(/[?&]p=([^&#]+)/);
+    if (m) { try { return decodeURIComponent(m[1]); } catch (e) { return m[1]; } }
+    m = href.match(/pieces\/([^./]+)\.html/);
+    return m ? m[1] : '';
+  }
   function slugOf(el) {
-    var a = el.closest('.d3-cw, .pc, .pb-st, [data-slug]');
-    if (a && a.getAttribute('data-slug')) return a.getAttribute('data-slug');
-    var link = el.closest('.d3-cw') ? $('.d3-cell', el.closest('.d3-cw')) : el.closest('a.pc');
-    var href = link && link.getAttribute('href');
-    if (href) { var m = href.match(/pieces\/([^./]+)\.html/); if (m) return m[1]; }
-    return window.PIECE || '';
+    /* the card the heart belongs to, however that card is built */
+    var box = el.closest('[data-slug]');
+    if (box && box.getAttribute('data-slug')) return box.getAttribute('data-slug');
+    box = el.closest('.pc-w, .d3-cw, .pc, .pb-st, .gal, figure, li') || el.parentNode;
+    while (box && box !== document.body) {
+      var link = box.matches && box.matches('a[href]') ? box : (box.querySelector && box.querySelector('a[href]'));
+      var s = slugInHref(link && link.getAttribute('href'));
+      if (s) return s;
+      box = box.parentNode;
+    }
+    if (window.PIECE) return window.PIECE;
+    try { return new URLSearchParams(location.search).get('p') || ''; } catch (e) { return ''; }
   }
 
   function paintSaved() {
@@ -290,8 +303,10 @@
     });
     on($('.cf-x'), 'click', clearAll);
     on($('.sh-clear'), 'click', clearAll);
+    /* the two filter bars label the same sorts differently */
+    var SORT = { featured: 'feat', feat: 'feat', low: 'lo', lo: 'lo', high: 'hi', hi: 'hi', az: 'az' };
     $$('select').forEach(function (s) {
-      on(s, 'change', function () { state.sort = s.value; renderGrids(); });
+      on(s, 'change', function () { state.sort = SORT[s.value] || 'feat'; renderGrids(); });
     });
     /* the phone's filter and sort open the same controls the desktop uses */
     on($('.fl-b'), 'click', function () {
@@ -633,6 +648,51 @@
     els.forEach(function (e) { io.observe(e); });
   }
 
+  /* ------------------------------------------------- the hero film and the top bar */
+  function playFilms() {
+    var vids = $$('video');
+    if (!vids.length) return;
+    function nudge() {
+      vids.forEach(function (v) {
+        v.muted = true; v.defaultMuted = true; v.playsInline = true;
+        v.setAttribute('muted', ''); v.setAttribute('playsinline', '');
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      });
+    }
+    nudge();
+    vids.forEach(function (v) {
+      on(v, 'loadeddata', nudge);
+      on(v, 'canplay', nudge);
+    });
+    on(document, 'visibilitychange', function () { if (!document.hidden) nudge(); });
+    /* a phone that still holds off starts on the first touch */
+    function once() {
+      nudge();
+      document.removeEventListener('touchstart', once);
+      document.removeEventListener('click', once);
+    }
+    document.addEventListener('touchstart', once, { passive: true });
+    document.addEventListener('click', once);
+  }
+
+  function stickyBar() {
+    var bar = $('.d3-bar');
+    if (!bar) return;
+    /* the export froze the bar in its hidden state; the class carries it now */
+    bar.style.transform = ''; bar.style.opacity = '';
+    var hero = $('#d3-hero') || $('.hero3');
+    function at() {
+      var past = hero ? hero.getBoundingClientRect().bottom <= 2
+                      : (window.pageYOffset || document.documentElement.scrollTop) > 80;
+      bar.classList.toggle('on', past);
+      bar.setAttribute('aria-hidden', past ? 'false' : 'true');
+    }
+    at();
+    window.addEventListener('scroll', at, { passive: true });
+    window.addEventListener('resize', at);
+  }
+
   /* ---------------------------------------------------------------- boot */
   function loadCatalogue() {
     return fetch(BASE + 'catalog.json', { cache: 'no-cache' })
@@ -648,6 +708,8 @@
 
   function start() {
     reveals();
+    playFilms();
+    stickyBar();
     homeSliders();
     loadCatalogue().then(function () {
       paintSaved();
