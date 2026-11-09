@@ -693,6 +693,28 @@
     window.addEventListener('resize', at);
   }
 
+  /* ------------------------------------------- every page opens at the top */
+  function topOfPage() {
+    /* the browser otherwise restores where you were on this page last time */
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+    if (location.hash) return;   /* an anchor still wins */
+    function top() {
+      try { window.scrollTo(0, 0); } catch (e) {}
+      [document.scrollingElement, document.documentElement, document.body].forEach(function (n) {
+        if (n && n.scrollTop) n.scrollTop = 0;
+      });
+      /* the page may sit in a scrolling wrapper rather than scrolling the window */
+      var n = $('.d3') || $('.ph') || document.body;
+      while (n) { if (n.scrollTop) n.scrollTop = 0; n = n.parentNode; }
+    }
+    top();
+    /* a browser that restores the old offset does it just after load, so go again */
+    if (window.requestAnimationFrame) window.requestAnimationFrame(top);
+    window.setTimeout(top, 90);
+    on(window, 'load', top);
+    on(window, 'pageshow', function (e) { if (e && e.persisted && !location.hash) top(); });
+  }
+
   /* ---------------------------------------------------------------- boot */
   function loadCatalogue() {
     return fetch(BASE + 'catalog.json', { cache: 'no-cache' })
@@ -707,6 +729,7 @@
   }
 
   function start() {
+    topOfPage();
     reveals();
     playFilms();
     stickyBar();

@@ -1242,8 +1242,15 @@ body{margin:0}
 
 :is(.d3,.mn,.sv-bar) .h3-bar .nv-row{border-top-color:rgba(244,239,231,.22)}
 
-/* over the hero the bar stays as it is: hovering it no longer turns it beige */
-:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover{background:transparent;color:inherit}
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover{background:#F4EFE7;color:#000}
+
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .wm{color:#000;filter:none}
+
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nv-row{border-color:rgba(0,0,0,.14)}
+
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover a,:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nv-u{text-shadow:none}
+
+:is(.d3,.mn,.sv-bar) .h3-bar:has(.nv:hover)::after{opacity:0}
 
 :is(.d3,.mn,.sv-bar) .h3-bar::after{transition:opacity .4s ease}
 
@@ -3209,3 +3216,29 @@ box-sizing:border-box;width:390px;background:var(--pa);color:#000;font-family:'I
 .sv-bar button.sv-tog{font-size:14px}
 .sv-bar button.sv-clear{font-size:12.5px;color:var(--mu)}
 .sv-bar button.sv-clear:hover{color:#000}
+
+/* --- follow-ups, 7 November --- */
+
+/* the showroom button sets its own dark label; the a.d3-btn rule above was
+   outranking it and leaving cream on cream */
+:is(.d3,.mn,.sv-bar) a.d3-btn.shb-btn,:is(.d3,.mn,.sv-bar) a.d3-btn.shb-btn:hover{color:#000}
+.ph a.btn.out{color:var(--es)}
+
+/* the breadcrumb on a category hero sits on a photograph: .ct-crumb came
+   after .ch-crumb at the same weight and dragged it back to near-black */
+:is(.d3,.mn,.sv-bar) .ct-crumb.ch-crumb,:is(.d3,.mn,.sv-bar) .ct-crumb.ch-crumb a{color:rgba(244,239,231,.82)}
+:is(.d3,.mn,.sv-bar) .ct-crumb.ch-crumb a:hover,:is(.d3,.mn,.sv-bar) .ct-crumb.ch-crumb b{color:var(--pa)}
+
+
+/* Saved pieces, treatment A (Bordeaux heart) — replaces the shoulder dot.
+   The export's rules carry an :is(...) prefix, so these re-assert above them. */
+:is(.d3,.mn,.sv-bar) .nb-sv.on svg{fill:currentColor;stroke:currentColor;color:var(--bo)}
+:is(.d3,.mn,.sv-bar) .nb-sv sup{content:none;right:-3px;top:-1px;display:none;width:auto;min-width:16px;height:16px;padding:0 3px;border-radius:100px;background:var(--bo);color:#F4EFE7;font-size:10.5px;line-height:16px;font-weight:400;text-align:center;letter-spacing:0;opacity:1;transform:scale(.4)}
+:is(.d3,.mn,.sv-bar) .nb-sv.on sup{display:block;opacity:1;transform:none}
+:is(.d3,.mn,.sv-bar) .sh-bar.bar-dark .nb-sv.on svg,:is(.d3,.mn,.sv-bar) .h3-bar .nb-sv.on svg{color:#E5D9C8}
+:is(.d3,.mn,.sv-bar) .sh-bar.bar-dark .nb-sv sup,:is(.d3,.mn,.sv-bar) .h3-bar .nb-sv sup{background:#E5D9C8;color:#33251A}
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nb-sv.on svg{color:var(--bo)}
+:is(.d3,.mn,.sv-bar) .h3-bar .nv:hover .nb-sv sup{background:var(--bo);color:#F4EFE7}
+
+/* a saved card fills its heart solid, not a tint */
+:is(.d3,.mn,.sv-bar) .sv-b.on .svh,:is(.d3,.mn,.sv-bar) .pc-sv.on .svh,:is(.d3,.mn,.sv-bar) [aria-pressed="true"] .svh{fill:#51302C}
