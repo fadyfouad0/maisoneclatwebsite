@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Maison Éclat</title><meta name="robots" content="noindex"><meta name="description" content="This page is not on the Maison Éclat site.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;height:100%;background:#F4EFE7;color:#000;font-family:'Inter Tight',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{min-height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 6vw;box-sizing:border-box}
+small{font-size:13px;color:rgba(0,0,0,.6)}
+h1{margin:18px 0 0;font-weight:500;font-size:clamp(44px,8vw,120px);line-height:.95;letter-spacing:-.05em}
+p{margin:22px 0 0;max-width:36ch;font-size:16px;line-height:1.5;color:rgba(0,0,0,.66)}
+.r{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+a{display:inline-flex;align-items:center;height:52px;padding:0 24px;font-size:15px;text-decoration:none}
+.a{background:#51302C;color:#F4EFE7}.a:hover{background:#000}
+.b{color:#000;box-shadow:inset 0 0 0 1px #000}.b:hover{background:#000;color:#F4EFE7}
+</style></head>
+<body><main><small>Maison Éclat · Cairo</small><h1>This page<br>is not here.</h1>
+<p>The address may have changed, or the piece may no longer be listed. Everything we carry is in the collection.</p>
+<div class="r"><a class="a" data-to="collection.html" href="collection.html">See all pieces</a><a class="b" data-to="index.html" href="index.html">Home</a></div></main>
+<script>
+/* this page is served at whatever address was asked for, so its links are written from the site's own root */
+(function(){var p=location.pathname.split('/').filter(Boolean),base=/github\.io$/.test(location.hostname)&&p.length?'/'+p[0]+'/':'/';
+document.querySelectorAll('[data-to]').forEach(function(a){a.href=base+a.getAttribute('data-to')});
+var l=document.querySelector('link[rel=icon]');if(l)l.href=base+'favicon.svg';})();
+</script></body></html>

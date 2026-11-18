@@ -158,6 +158,25 @@
    ]
   },
   {
+   "slug": "mira",
+   "name": "Mira",
+   "cat": "Chandelier",
+   "mat": "Crystal, fine wire",
+   "price": "On request",
+   "label": "new",
+   "maker": "",
+   "collection": "",
+   "blurb": "Crystal drops on a web of fine wire.",
+   "img": "assets/a06f8628c6d8ff1455416635cc3c8554.webp",
+   "imgs": [
+    "assets/a06f8628c6d8ff1455416635cc3c8554.webp"
+   ],
+   "href": "piece.html?p=mira",
+   "sizes": [],
+   "finishes": [],
+   "specs": []
+  },
+  {
    "slug": "waterfall-column",
    "name": "Waterfall Column",
    "cat": "Chandelier",

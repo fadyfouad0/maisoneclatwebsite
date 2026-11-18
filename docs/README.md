@@ -22,7 +22,7 @@ domain, then point the domain's DNS at GitHub.
 | `index.html` | Home |
 | `collection.html` | All pieces: search, filters, sorting |
 | `chandeliers.html` ... `accessories.html` | One page per category |
-| `piece.html` | **One product page, used by all 37 pieces** (`piece.html?p=desert-rose`) |
+| `piece.html` | **One product page, used by every piece** (`piece.html?p=desert-rose`) |
 | `showroom.html` | Visit and contact |
 | `catalog.json` | **Every piece, in one file** |
 | `site.css` | The whole design |
